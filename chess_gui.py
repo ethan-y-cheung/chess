@@ -59,7 +59,7 @@ root = Tk()
 mixer.init()
 root.title("Chessica")
 root.resizable(False, False)
-ico = Image.open('B_pawn.png')
+ico = Image.open('image_assets/B_pawn.png')
 photo = ImageTk.PhotoImage(ico)
 root.wm_iconphoto(False, photo)
 
@@ -193,29 +193,29 @@ pics = {}
 
 def draw_pieces():
     global tile_starting_point_x, tile_starting_point_y, Board_Pxsize, tile_width, tile_height, board
-    K = ImageTk.PhotoImage(Image.open("W_king.png").resize((int(tile_height), int(tile_width))))
+    K = ImageTk.PhotoImage(Image.open("image_assets/W_king.png").resize((int(tile_height), int(tile_width))))
     root.K = K
-    k = ImageTk.PhotoImage(Image.open("B_king.png").resize((int(tile_height), int(tile_width))))
+    k = ImageTk.PhotoImage(Image.open("image_assets/B_king.png").resize((int(tile_height), int(tile_width))))
     root.k = k
-    Q =ImageTk.PhotoImage(Image.open("W_queen.png").resize((int(tile_height), int(tile_width))))
+    Q =ImageTk.PhotoImage(Image.open("image_assets/W_queen.png").resize((int(tile_height), int(tile_width))))
     root.Q = Q
-    q = ImageTk.PhotoImage(Image.open("B_queen.png").resize((int(tile_height), int(tile_width))))
+    q = ImageTk.PhotoImage(Image.open("image_assets/B_queen.png").resize((int(tile_height), int(tile_width))))
     root.q = q
-    R = ImageTk.PhotoImage(Image.open("W_rook.png").resize((int(tile_height), int(tile_width))))
+    R = ImageTk.PhotoImage(Image.open("image_assets/W_rook.png").resize((int(tile_height), int(tile_width))))
     root.R = R
-    r = ImageTk.PhotoImage(Image.open("B_rook.png").resize((int(tile_height), int(tile_width))))
+    r = ImageTk.PhotoImage(Image.open("image_assets/B_rook.png").resize((int(tile_height), int(tile_width))))
     root.r = r
-    B = ImageTk.PhotoImage(Image.open("W_bishop.png").resize((int(tile_height), int(tile_width))))
+    B = ImageTk.PhotoImage(Image.open("image_assets/W_bishop.png").resize((int(tile_height), int(tile_width))))
     root.B = B
-    b = ImageTk.PhotoImage(Image.open("B_bishop.png").resize((int(tile_height), int(tile_width))))
+    b = ImageTk.PhotoImage(Image.open("image_assets/B_bishop.png").resize((int(tile_height), int(tile_width))))
     root.b = b
-    N = ImageTk.PhotoImage(Image.open("W_Knight.png").resize((int(tile_height), int(tile_width))))
+    N = ImageTk.PhotoImage(Image.open("image_assets/W_Knight.png").resize((int(tile_height), int(tile_width))))
     root.N = N
-    n = ImageTk.PhotoImage(Image.open("B_Knight.png").resize((int(tile_height), int(tile_width))))
+    n = ImageTk.PhotoImage(Image.open("image_assets/B_Knight.png").resize((int(tile_height), int(tile_width))))
     root.n = n
-    P = ImageTk.PhotoImage(Image.open("W_pawn.png").resize((int(tile_height), int(tile_width))))
+    P = ImageTk.PhotoImage(Image.open("image_assets/W_pawn.png").resize((int(tile_height), int(tile_width))))
     root.P = P
-    p = ImageTk.PhotoImage(Image.open("B_pawn.png").resize((int(tile_height), int(tile_width))))
+    p = ImageTk.PhotoImage(Image.open("image_assets/B_pawn.png").resize((int(tile_height), int(tile_width))))
     root.p = p
     
     pics = {"K":K, "k":k, "Q":Q, "q":q, "R":R, "r":r, "B":B, "b":b, "N":N, "n":n, "P":P, "p":p}
@@ -420,21 +420,21 @@ def animate(image_index, ending_coordinates, move_index, move,str_board1):
         _,rect_x,rect_y = image_board[move[2]]
         
         if move[0][0] != str_board1[move[1]]:
-            Q1 =ImageTk.PhotoImage(Image.open("W_queen.png").resize((int(tile_height), int(tile_width))))
+            Q1 =ImageTk.PhotoImage(Image.open("image_assets/W_queen.png").resize((int(tile_height), int(tile_width))))
             root.Q1 = Q1
-            q1 = ImageTk.PhotoImage(Image.open("B_queen.png").resize((int(tile_height), int(tile_width))))
+            q1 = ImageTk.PhotoImage(Image.open("image_assets/B_queen.png").resize((int(tile_height), int(tile_width))))
             root.q1 = q1
-            R1 = ImageTk.PhotoImage(Image.open("W_rook.png").resize((int(tile_height), int(tile_width))))
+            R1 = ImageTk.PhotoImage(Image.open("image_assets/W_rook.png").resize((int(tile_height), int(tile_width))))
             root.R1 = R1
-            r1 = ImageTk.PhotoImage(Image.open("B_rook.png").resize((int(tile_height), int(tile_width))))
+            r1 = ImageTk.PhotoImage(Image.open("image_assets/B_rook.png").resize((int(tile_height), int(tile_width))))
             root.r1 = r1
-            B1 = ImageTk.PhotoImage(Image.open("W_bishop.png").resize((int(tile_height), int(tile_width))))
+            B1 = ImageTk.PhotoImage(Image.open("image_assets/W_bishop.png").resize((int(tile_height), int(tile_width))))
             root.B1 = B1
-            b1 = ImageTk.PhotoImage(Image.open("B_bishop.png").resize((int(tile_height), int(tile_width))))
+            b1 = ImageTk.PhotoImage(Image.open("image_assets/B_bishop.png").resize((int(tile_height), int(tile_width))))
             root.b1 = b1
-            N1 = ImageTk.PhotoImage(Image.open("W_Knight.png").resize((int(tile_height), int(tile_width))))
+            N1 = ImageTk.PhotoImage(Image.open("image_assets/W_Knight.png").resize((int(tile_height), int(tile_width))))
             root.N1 = N1
-            n1 = ImageTk.PhotoImage(Image.open("B_Knight.png").resize((int(tile_height), int(tile_width))))
+            n1 = ImageTk.PhotoImage(Image.open("image_assets/B_Knight.png").resize((int(tile_height), int(tile_width))))
             root.n1 = n1
 
             pics1 = {"Q":Q1, "q":q1, "R":R1, "r":r1, "B":B1, "b":b1, "N":N1, "n":n1}
@@ -468,11 +468,11 @@ def animate(image_index, ending_coordinates, move_index, move,str_board1):
 
 pre_move_rect, move_rect = None, None
 
-capture = "capture.mp3"
-castle = "castle.mp3"
-check = "check.mp3"
-move = "move.mp3"
-promote = "promote.mp3"
+capture = "audio_assets/capture.mp3"
+castle = "audio_assets/castle.mp3"
+check = "audio_assets/check.mp3"
+move = "audio_assets/move.mp3"
+promote = "audio_assets/promote.mp3"
 
 prev_selected = []
 def delete_selected():
@@ -870,9 +870,9 @@ def title_screen():
         black_player_choice.place(relx=0.5, rely=0.56, anchor="center", width=drop_down_width, height=drop_down_height)  
         made_by_text = canvas.create_text(Canvas_width*0.2, Canvas_height * 0.95, text="Made by: Ethan Cheung", font=("Conforta", 16), fill="#FFFFFF")
         
-        t = ImageTk.PhotoImage(Image.open("title_pic_w.png").resize((int(Canvas_width*0.5),int(Canvas_width*0.5))))
+        t = ImageTk.PhotoImage(Image.open("image_assets/title_pic_w.png").resize((int(Canvas_width*0.5),int(Canvas_width*0.5))))
         root.t = t
-        t1 = ImageTk.PhotoImage(Image.open("title_pic.png").resize((int(Canvas_width*0.5),int(Canvas_width*0.5))).rotate(180))
+        t1 = ImageTk.PhotoImage(Image.open("image_assets/title_pic.png").resize((int(Canvas_width*0.5),int(Canvas_width*0.5))).rotate(180))
         root.t1 = t1
         p = {1:t,2:t1}
         
