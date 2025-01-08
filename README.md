@@ -1,7 +1,7 @@
 # Chess AI Project
 
 ## Overview
-This Chess AI project is a fully functional chess engine designed to evaluate board states and determine optimal moves. It integrates advanced algorithms and heuristic evaluation techniques to mimic human-like strategic thinking while leveraging computational power to explore possible moves efficiently.
+This Chess AI project is a fully functional chess engine designed to evaluate board states and determine optimal moves. It integrates advanced algorithms and heuristic evaluation techniques to mimic human-like strategic thinking while leveraging computational power to explore possible moves efficiently. It contains roughly 3000 lines of code in total.
 
 ## Features
 - **Static Evaluation Function**: Assigns scores to board states based on material balance, piece activity, and positional factors (e.g., central control, pawn structure).
